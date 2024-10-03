@@ -1,0 +1,291 @@
+body {
+    font-family: cursive;
+}
+
+nav {
+    background-color: #ecc3c379;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    /* Larger brand text */
+    font-weight: bold;
+    /* Bold brand text */
+    color: white;
+    /* Brand text color */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    /* Larger text for navbar items */
+    font-weight: bold;
+    /* Bold text for navbar items */
+    color: white;
+    /* Text color */
+    transition: color 0.3s;
+    /* Smooth color transition */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    /* Change color on hover */
+}
+
+/* Adjust dropdown menu */
+.dropdown-menu {
+    background-color: white;
+    border: none;
+    /* Remove border */
+}
+
+.dropdown-item {
+    font-size: 1.1rem;
+    /* Larger text for dropdown items */
+    color: black;
+}
+
+.dropdown-item:hover {
+    background-color: #0056b3;
+    /* Background color on hover */
+    color: #ffc107;
+    /* Change text color on hover */
+}
+
+/* Adjust banner styling */
+.banner {
+    position: relative;
+    height: 700px;
+    background-image: url('images/banner3.jpg');
+    background-size: cover;
+}
+
+.banner-content {
+    position: absolute;
+    right: 90px;
+    top: 300px;
+    text-align: right;
+    font-weight: bold;
+    color: black;
+}
+
+/* About Us Container Styles */
+.about-us {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-us .row {
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+}
+
+.about-us img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-us h2 {
+    font-weight: 800;
+    font-family: cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.about-us p {
+    line-height: 1.8;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 1.3rem;
+}
+
+/* Featured Dogs Section Styles */
+
+.featured-dogs h2 {
+    font-family: cursive;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.dog-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.dog-container:hover {
+    transform: scale(1.05);
+}
+
+.dog-img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dog-name {
+    font-size: 1.3rem;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+
+/* Testimonials Section Styles */
+.testimonials {
+    text-align: center;
+    background-image: url('images/dog bg2.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.testimonials h2 {
+    font-family: cursive;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.testimonials-content {
+    display: flex;
+    overflow: hidden;
+    max-width: 700px;
+    margin-left: auto;
+    position: relative;
+    align-items: center;
+}
+
+.testimonial {
+    min-width: 100%;
+    transition: transform 1s ease-in-out;
+    font-size: 1.3rem;
+    font-style: italic;
+    color: #555;
+    padding: 20px;
+}
+
+.testimonial p {
+    margin: 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add hover effect to start sliding */
+.testimonials-content:hover .testimonial {
+    animation-play-state: paused;
+    /* Stop automatic sliding on hover */
+}
+
+/* Keyframe animation for sliding testimonials */
+@keyframes slideTestimonials {
+    0% {
+        transform: translateX(0%);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Applying the sliding animation */
+.testimonials-content .testimonial {
+    animation: slideTestimonials 16s infinite;
+}
+
+/* donation section */
+
+.donations {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+}
+
+.benefit {
+    background: rgb(218, 195, 195);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    /* Add space between rows */
+}
+
+.benefit h4 {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.donations h2,
+.donations h3,
+.donations p,
+.donations h4 {
+    font-family: cursive;
+}
+
+/* contact us */
+
+.contact-us {
+    background-color: #e3cccc;
+    padding: 50px 0;
+}
+
+.contact-us h2 {
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+
+.contact-us p {
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+/* .contact-us .form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+} */
+
+.contact-us .btn-primary {
+    background-color: #99503c;
+    /* border-color: #007bff; */
+}
+
+footer {
+    padding: 10px 0;
+}
+
+footer h5 {
+    margin-bottom: 5px;
+    color: #a68525;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
